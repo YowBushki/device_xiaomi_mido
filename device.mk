@@ -27,6 +27,19 @@ $(call inherit-product, device/xiaomi/msm8953-common/msm8953.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
     $(LOCAL_PATH)/audio/mixer_paths_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_mtp.xml
+    $(LOCAL_PATH)/audio/mixer_paths_tasha.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tasha.xml
+
+# Camera
+PRODUCT_PACKAGES += \
+    GCam
+
+# ConfigPanel
+PRODUCT_PACKAGES += \
+    ConfigPanel
+
+# Device init scripts
+PRODUCT_PACKAGES += \
+    init.target.rc
 
 # Fingerprint
 PRODUCT_PACKAGES += \
