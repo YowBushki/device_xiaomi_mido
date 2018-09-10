@@ -24,11 +24,7 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
 
 # Kernel
-TARGET_KERNEL_CONFIG := mido_defconfig
-
-# Lineage Hardware
-BOARD_HARDWARE_CLASS += \
-    $(DEVICE_PATH)/lineagehw
+TARGET_KERNEL_CONFIG := franco_mido_defconfig
 
 # Partitions
 BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
